@@ -1,0 +1,19 @@
+$(document).ready(function(){
+	$("#firstpane tr.tb_foot").click(function()
+	{  
+		$(this).next("tr.menu_body2").slideToggle(300).siblings("tr.menu_body2").slideUp("slow");	
+	});	
+	$(window).scroll(function(){
+		if($(this).scrollTop()!=0)
+		{
+			$('#bttop').fadeIn();
+		}
+		else
+		{
+			$('#bttop').fadeOut();
+		}
+	});
+	$('#bttop').click(function(){
+		$('body,html').animate({scrollTop:0},400);
+	});
+});

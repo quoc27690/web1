@@ -1,0 +1,30 @@
+FileETag none
+
+ErrorDocument 404 /404.php
+RewriteEngine On
+
+RewriteRule ^vn/trang-chu/								       ?act=home&id_lang=1
+RewriteRule ^vn/lien-he/							           ?act=lien_he&id_lang=1
+RewriteRule ^vn/gioi-thieu/							         ?act=gioi_thieu&id=6&id_lang=1
+RewriteRule ^vn/dich-vu-([0-9]*)/							   ?act=dich_vu_xem&id=$1&id_lang=1
+RewriteRule ^vn/bac-si/							             ?act=bac_si&id_lang=1
+RewriteRule ^vn/bac-si-xem-([0-9]*)/				     ?act=bac_si_xem&id=$1&id_lang=1
+RewriteRule ^vn/khach-hang/							         ?act=khach_hang&id_lang=1
+RewriteRule ^vn/tin-tuc/								         ?act=tin_tuc&id=1&id_lang=1
+RewriteRule ^vn/tin-tuc-([0-9]*)/		             ?act=tin_tuc&id=1&page=$1&id_lang=1
+RewriteRule ^vn/tin-(.*)/				                 ?act=tin_tuc_xem&id=$1&id_lang=1
+RewriteRule ^vn/tim-kiem/							           ?act=tim_kiem&id_lang=1
+RewriteRule ^vn/bang-gia/							           ?act=bang_gia&id=24&id_lang=1
+
+RewriteRule ^en/trang-chu/								       ?act=home&id_lang=2
+RewriteRule ^en/lien-he/							           ?act=lien_he&id_lang=2
+RewriteRule ^en/gioi-thieu/							         ?act=gioi_thieu&id=6&id_lang=2
+RewriteRule ^en/dich-vu-([0-9]*)/							   ?act=dich_vu_xem&id=$1&id_lang=2
+RewriteRule ^en/bac-si/							             ?act=bac_si&id_lang=2
+RewriteRule ^en/bac-si-xem-([0-9]*)/				     ?act=bac_si_xem&id=$1&id_lang=2
+RewriteRule ^en/khach-hang/							         ?act=khach_hang&id_lang=2
+RewriteRule ^en/tin-tuc/								         ?act=tin_tuc&id=1&id_lang=2
+RewriteRule ^en/tin-tuc-([0-9]*)/		             ?act=tin_tuc&id=1&page=$1&id_lang=2
+RewriteRule ^en/tin-(.*)/				                 ?act=tin_tuc_xem&id=$1&id_lang=2
+RewriteRule ^en/tim-kiem/							           ?act=tim_kiem&id_lang=2
+RewriteRule ^en/bang-gia/							           ?act=bang_gia&id=24&id_lang=2

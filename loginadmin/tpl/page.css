@@ -1,0 +1,657 @@
+/* Clearfix */
+.clearfix:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+* html > body .clearfix {
+	display: block;
+	width: 100%;
+}
+* html .clearfix {
+	height: 1%;
+}
+/* CSS Document */
+a
+{
+	color:#838383;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+b.back:hover
+{
+	color:#F00;
+	cursor:pointer;
+}
+img.back:hover
+{
+	cursor:pointer;
+}
+body, p, ul, li, h1, h2, h3
+{
+	margin:0;
+	padding:0;
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#838383;
+	background:url(../images/bg_body.jpg);
+}
+#bttop
+{
+	position:fixed;
+	right:0;
+	display:none; 
+	bottom:0px; 
+	*top:400px; 
+	z-index:99999999;
+	opacity:0.5;
+	filter:alpha(opacity=50);
+}
+#bttop:hover
+{
+	opacity:1;
+	filter:alpha(opacity=100);
+}
+#fw_frame
+{
+	width:100%;
+	clear:both;
+	position:relative;
+	top:58px;
+}
+/* Banner */
+#fw_banner
+{
+	height:58px;
+	padding:0 10px;
+	position:fixed;
+	z-index:50;
+	width:100%;
+	background:url(../images/bg_body.jpg);
+}
+#fw_banner .div_img
+{
+	float:left;
+	width:291px;
+	margin-left:10px;
+}
+.khung_avatar
+{
+	width:294px; 
+	height:92px; 
+	background:#889395; 
+	color:#FFF; 
+	margin-left:3px;
+	box-shadow: -3px -1px 1px #889395;
+	-webkit-box-shadow: -3px -1px 1px #889395;
+	-moz-box-shadow: -3px -1px 1px #889395;
+}
+/* Menu */
+#fw_menu_2
+{
+	width:200px;
+	float:right;
+	margin-right:5px;
+}
+#fw_menu
+{
+	width:294px;
+	float:left;
+	background:url(../images/bg_khung_menu.png) repeat-y;
+	padding-left:4px;
+	height:auto;
+}
+#fw_menu #menu_1
+{
+	list-style:none;
+	display:table;
+	width:84px;
+	height:auto;
+	float:left;
+	box-shadow: -3px -1px 5px #666;
+	-webkit-box-shadow: -3px -1px 5px #666;
+	-moz-box-shadow: -3px -1px 5px #666;
+}
+#fw_menu #menu_1 li
+{
+	color:#838383;
+	font-weight:bold;
+	cursor:pointer;
+	position:relative;
+	height:76px;
+	border-top:solid 2px #dfdfdf;
+	width:82px;
+	text-align:center;
+	line-height:120px;
+}
+#fw_menu #menu_1 li:hover,#fw_menu #menu_1 li.active
+{
+	color:#41afda
+}
+/*home*/
+#fw_menu #menu_1 li.home
+{
+	background:url(../images/icon/trangchu.jpg);
+}
+#fw_menu #menu_1 li.home:hover,#fw_menu #menu_1 li.home.active
+{
+	background-position: bottom left
+}
+/*cms*/
+#fw_menu #menu_1 li.cms
+{
+	background:url(../images/icon/tintuc.jpg)
+}
+#fw_menu #menu_1 li.cms:hover,#fw_menu #menu_1 li.cms.active
+{
+	background-position: bottom left
+}
+/*gal*/
+#fw_menu #menu_1 li.gal
+{
+	background:url(../images/icon/hinhanh.jpg)
+}
+#fw_menu #menu_1 li.gal:hover,#fw_menu #menu_1 li.gal.active
+{
+	background-position: bottom left
+}
+/*duct*/
+#fw_menu #menu_1 li.duct
+{
+	background:url(../images/icon/sanpham.jpg)
+}
+#fw_menu #menu_1 li.duct:hover,#fw_menu #menu_1 li.duct.active
+{
+	background-position: bottom left
+}
+/*ject*/
+#fw_menu #menu_1 li.ject
+{
+	background:url(../images/icon/duan.jpg)
+}
+#fw_menu #menu_1 li.ject:hover,#fw_menu #menu_1 li.ject.active
+{
+	background-position: bottom left
+}
+/*config*/
+#fw_menu #menu_1 li.config
+{
+	background:url(../images/icon/cauhinh.jpg)
+}
+#fw_menu #menu_1 li.config:hover,#fw_menu #menu_1 li.config.active
+{
+	background-position: bottom left
+}
+/*page*/
+#fw_menu #menu_1 li.page
+{
+	background:url(../images/icon/baiviet.jpg)
+}
+#fw_menu #menu_1 li.page:hover,#fw_menu #menu_1 li.page.active
+{
+	background-position: bottom left
+}
+/*mem*/
+#fw_menu #menu_1 li.mem
+{
+	background:url(../images/icon/taikhoan.jpg)
+}
+#fw_menu #menu_1 li.mem:hover,#fw_menu #menu_1 li.mem.active
+{
+	background-position: bottom left
+}
+/*flle*/
+#fw_menu #menu_1 li.file
+{
+	background:url(../images/icon/file.jpg)
+}
+#fw_menu #menu_1 li.file:hover,#fw_menu #menu_1 li.file.active
+{
+	background-position: bottom left
+}
+/*media*/
+#fw_menu #menu_1 li.media
+{
+	background:url(../images/icon/media.jpg)
+}
+#fw_menu #menu_1 li.media:hover,#fw_menu #menu_1 li.media.active
+{
+	background-position: bottom left
+}
+/* Main Frame */
+#main_frame
+{
+	text-align:left;
+	width:100%;
+	height:auto;
+	display:table;
+}
+.function
+{
+	clear:both;
+	padding: 0 10px;
+	line-height:39px;
+	background:url(../images/bg_button.jpg) repeat-x;
+	text-align:center;
+	margin-top:15px;
+	border:solid 1px #dddddd;
+	width:125px;
+	text-shadow: 1px 1px 1px #FFF;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	cursor:pointer;
+}
+.function:hover {
+	background:#e6e6e6;
+}
+.function a
+{
+	padding:10px 0;
+}
+.khung_title
+{
+	width:100%; 
+	line-height:39px; 
+	background:url(../images/bg_khung_right.jpg) repeat-x;
+	text-shadow: 1px 1px 1px #FFF;
+	text-transform:uppercase;
+	font-weight:bold;
+	text-align:left;
+	font-size:14px;
+	margin-top:5px;
+}
+.quan_ly
+{
+	line-height:40px;
+	width:100%;
+	border-bottom:solid 1px #dcdfe0;
+	text-shadow: 1px 1px 1px #FFF;
+	height:40px;
+}
+.quan_ly a
+{
+	font-weight:normal
+}
+.quan_ly a:hover,.quan_ly a.active
+{
+	font-weight:bold;
+	color:#41afda;
+	text-decoration:none;
+}
+.border
+{
+	width:100%;
+	height:1px;
+	border-bottom:solid 1px #FFF;
+}
+.lang a.active{
+	opacity:0.4;
+	filter:alpha(opacity=40);
+}
+.lang a img {
+	border:none;
+	margin-left:10px;
+}
+.div_foot{
+	border-bottom:solid 1px #cadadd;
+	padding:10px 0
+}
+.tab_dm tr.tb_foot
+{
+	float:left;
+	width:200px;
+	cursor:pointer;
+}
+.tab_dm tr.tb_foot td,.tab_con tr td
+{
+	border-bottom:solid 1px #dcdfe0;
+	padding:5px 0
+}
+.tab_dm tr td a
+{
+	font-weight:normal
+}
+.tab_dm tr td a:hover,.tab_dm tr td a.active
+{
+	font-weight:bold;
+	color:#41afda;
+	text-decoration:none;
+}
+.so_thongke
+{
+	color:#00b6f2;
+	font-weight:bold;
+	font-size:14px;
+}
+.khung_tk
+{
+	width:70%;
+	border:solid 1px #d7d7d7;
+	height:21px;
+	padding-left:10px;
+	float:left;
+}
+.button_tk
+{
+	width:25%;
+	background:#f7f7f7;
+	color:#7c7c7c;
+	border:solid 1px #d7d7d7;
+	height:25px;
+	float:left;
+	cursor:pointer;
+}
+.button_tk:hover
+{
+	background:#f38989;
+	border:solid 1px #bf3b3b;
+	color:#FFF;
+}
+.tb_table
+{
+	margin-top:15px;
+	margin-bottom:5px;
+	border-left:solid 1px #cadadd;
+	border-right:solid 1px #cadadd
+}
+.tb_table .tb_head
+{
+	height:39px; 
+	background:url(../images/bg_khung_right.jpg) repeat-x;
+	
+}
+.tb_table .tb_head td
+{
+	font-weight:bold;
+	text-align:center;
+	color:#838383;
+	text-shadow: 1px 1px 1px #FFF;
+}
+.tb_table .tb_content
+{
+	background:#fff;
+}
+.tb_table .tb_content:hover
+{
+	background:#f2f5f7;
+}
+.tb_table .tb_content td
+{
+	padding-left:2px;
+	padding-right:2px;
+	text-align:center;
+	height:28px;
+	border-bottom:dotted 1px #CCCCCC;
+}
+.tb_table .tb_foot
+{
+	background:#f2f5f7;
+}
+.tb_table .tb_foot td
+{
+	text-align:center;
+	height:28px;
+	border-bottom:solid 1px #cadadd;
+	padding:10px 0 10px 10px
+}
+/* Input, Button */
+.inputbox
+{
+	background:#f8f8f8;
+	border:solid 1px #cccccc;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+.form_chung .inputbox
+{
+	background:#f8f8f8;
+	border:solid 1px #cccccc;
+	padding:5px;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+.inputbox:hover, .inputbox:focus
+{
+	border:solid 1px #4e6972;
+}
+.khung_button
+{
+	background:url(../images/bg_button_form.jpg) repeat-x;  
+	height:27px; 
+	border:solid 1px #ccc;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+.khung_button:hover { 
+	background:#e6e6e6;
+}
+.button
+{
+	color:#666;
+	padding: 3px 10px 7px 20px;
+	background: url(../images/add_new.jpg) no-repeat left 7px center;
+	text-align:center;
+	text-shadow: 1px 1px 1px #FFF;
+	font-weight:bold;
+	border:0;
+	cursor:pointer;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.button_2,.button_3
+{
+	border:1px solid #bf3b3b;
+	background:url(../images/bg_xoa.jpg) repeat-x;	
+	color:#FFF;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	padding:4px 5px;
+	cursor:pointer;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.button_2:hover,.button_3:hover
+{
+	background:#88d3ef;
+	border: solid 1px #0ca1d3;
+}
+.button_4
+{
+	color:#666;
+	padding: 3px 10px 7px 23px;
+	background: url(../images/capnhat.jpg) no-repeat left 3px center;
+	text-align:center;
+	border:0;
+	text-shadow: 1px 1px 1px #FFF;
+	cursor:pointer;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+}
+/* Copyright */
+#copyright
+{
+	padding-top:12px;
+	line-height:15px;
+	width:100%;
+	clear:both;
+	height:44px;
+	background:url(../images/copyright_bg.png) repeat-x;
+	text-align:center;
+	color:#FFFFFF;
+}
+#copyright a
+{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+#copyright a:hover
+{
+	text-decoration:underline;
+}
+.trang{
+	background:#f4f4f4;
+	padding:7px 10px;
+	border:solid 1px #cccccc;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	margin-left:10px;
+}
+.tb_table .tb_foot td a
+{
+	background:#f4f4f4;
+	padding:5px 7px;
+	border:solid 1px #cccccc;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	margin:0 4px;
+	color:#000;
+	text-decoration:none;
+}
+.tb_table .tb_foot td a:hover,.tb_table .tb_foot td a.active
+{
+	background:#88d3ef;
+	border:solid 1px #0ca1d3;
+	color:#FFF;
+}
+.hien_thi
+{
+	background:#f38989;
+	border:solid 1px #bf3b3b;
+	color:#FFF;
+	padding:3px 5px;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	margin:0 4px;
+	text-decoration:none;
+	cursor:pointer;
+}
+.hien_thi:hover
+{
+	background:#88d3ef;
+	border: solid 1px #0ca1d3;
+}
+.form_chung{
+	background:#FFF;
+	border:solid 1px #cadadd;
+	border-top:none;
+	margin-top:10px;
+}
+.form_chung tr td.form_bot
+{
+	background:#f1f1f1;
+	border-top:solid 1px #cadadd;
+	padding:10px 0;
+}
+.form_chung tr td{
+	padding:3px 0 3px 35px;
+}
+.form_chung tr td.khung_title{
+	padding:3px 0 3px 10px;
+}
+.selectbox_form_chung{
+    float: left;
+    height: 25px;
+    padding-left: 10px;
+    position: relative;
+    width: 250px;
+}
+.selectbox_form_chung span {
+    background: url(../images/select_right.png) no-repeat scroll right top transparent;
+    cursor: pointer;
+    height: 28px;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    width: 29px;
+	z-index:1;
+}
+.selectbox_form_chung select {
+    cursor: pointer;
+    height: 27px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 260px;
+	background: #f8f8f8;
+	border:solid 1px #cccccc;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	padding:3px;
+}
+.radio{
+	line-height:25px;
+}
+.khung_img{
+	width:150px; 
+	height:150px; 
+	border:solid 1px #e4e4e4; 
+	background:#f4f4f4; 
+	float:left; 
+	margin:10px;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-webkit-transition: all 0.1s ease-in;
+	-moz-transition: all 0.1s ease-in;
+	-ms-transition: all 0.1s ease-in;
+	transition: all 0.1s ease-in;
+	cursor:pointer;
+}
+.khung_img:hover { 
+	z-index: 2;
+	-webkit-transform: scale(1) translateY(-15px);	
+	-moz-transform: scale(1) translateY(-15px);	
+	-ms-transform: scale(1) translateY(-15px);	
+	transform: scale(1) translateY(-15px);	
+	-webkit-box-shadow: 0 5px 15px #CCC;
+	-moz-box-shadow: 0 5px 15px #CCC;
+	box-shadow: 0 5px 15px #CCC;
+}
+.img{
+	width:138px; 
+	height:100px; 
+	float:left; 
+	margin:5px 0 5px 5px
+}
+.ten_img{
+	width:138px;
+	float:left; 
+	margin-left:5px; 
+	line-height:30px; 
+	color:#4a4a4a; 
+	font-weight:bold
+}
+.menu_body
+{
+	display:none;
+	float:left;
+	background:#FFF;
+}
+.menu_body.active,
+.menu_body2.active
+{
+	display:block;
+}
+.menu_body2
+{
+	display:none;
+	width:200px;
+	float:left;
+}
+.thu_tu{
+	width:60px;
+	text-align:center;
+	border: solid 1px #CCC;
+	padding:5px 0;
+}
