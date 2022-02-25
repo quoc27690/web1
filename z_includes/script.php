@@ -12,25 +12,22 @@
 <script type="text/javascript" src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="/js/custom.js"></script>
 <?
-if($act=="home")
-{
-	if (get_bien("hien_thi") == 1)
-	{
-	?>
-	<script type="text/javascript">
-		$(window).load(function(){
-			$('#myModal').modal('show');
-		});
-	</script>
-	<?
+if ($act == "home") {
+	if (get_bien("hien_thi") == 1) {
+?>
+		<script type="text/javascript">
+			$(window).load(function() {
+				$('#myModal').modal('show');
+			});
+		</script>
+<?
 	}
 }
 ?>
 <?
-if($act=="lien_he")
-{
+if ($act == "lien_he") {
 ?>
-<script src="/lien_he/init.js" type="text/javascript"></script>
+	<script src="/lien_he/init.js" type="text/javascript"></script>
 <?
 }
 ?>

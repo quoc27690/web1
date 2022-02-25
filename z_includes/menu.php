@@ -64,7 +64,7 @@
 									<input type="text" class="form-control" placeholder="<?= $lang['tim_kiem_san_pham'] ?>">
 									<span class="input-group-btn">
 										<button class="btn btn-default" type="button"><a href="/<?= $iso ?>/tim-kiem<?= lg_string::get_link($txt) ?>" class="search_btn">
-												<img src=" /images/img/bt_tk.png" alt="Tìm kiếm">
+												<img src="/images/img/bt_tk.png" alt="Tìm kiếm">
 											</a></button>
 									</span>
 								</div>

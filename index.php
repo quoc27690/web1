@@ -43,8 +43,6 @@ ob_end_clean();
 		</header>
 		<div class="main">
 			<?php include "z_modules/" . $act . ".php"; ?>
-
-
 		</div>
 		<footer class="footer">
 			<div class="contract">

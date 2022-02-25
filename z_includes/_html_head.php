@@ -4,32 +4,33 @@
 <title> <?php include "z_includes/seo_google.php"; ?> </title>
 <meta property="og:type" content="article" />
 <meta property="og:title" content="<?php include "z_includes/seo_google.php"; ?>" />
-<meta property="og:description" content="<?=$description?>" />
-<meta property="og:url" content="<? echo curPageURL();?>" />
+<meta property="og:description" content="<?= $description ?>" />
+<meta property="og:url" content="<? echo curPageURL(); ?>" />
 <meta property="og:site_name" content="<?php include "z_includes/seo_google.php"; ?>" />
-<meta name="description" content="<?=$description?>"/>
-<meta name="keywords" content="<?=$key?>"/>
-<meta name="author" content="<?=get_bien("author")?>"/>
-<meta name="copyright" content="<?=get_bien("copyright")?>" />
+<meta name="description" content="<?= $description ?>" />
+<meta name="keywords" content="<?= $key ?>" />
+<meta name="author" content="<?= get_bien("author") ?>" />
+<meta name="copyright" content="<?= get_bien("copyright") ?>" />
 <meta http-equiv="expires" content="0" />
 <meta name="resource-type" content="document" />
 <meta name="distribution" content="global" />
 <meta name="robots" content="index, follow" />
 <meta name="revisit-after" content="1 days" />
 <meta name="rating" content="general" />
-<link rel="canonical" href="<? echo curPageURL();?>" />
+<link rel="canonical" href="<? echo curPageURL(); ?>" />
 <meta name="geo.region" content="VN-DN" />
 <meta name="geo.position" content="16.056557;108.206926" />
 <meta name="ICBM" content="16.056557, 108.206926" />
 <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
 <meta name="DC.title" content="<?php include "z_includes/seo_google.php"; ?>">
-<meta name="DC.identifier" content="<? echo curPageURL();?>">
-<meta name="DC.description" content="<?=$description?>">
-<meta name="DC.subject" content="<?=$key?>">
+<meta name="DC.identifier" content="<? echo curPageURL(); ?>">
+<meta name="DC.description" content="<?= $description ?>">
+<meta name="DC.subject" content="<?= $key ?>">
 <link rel="icon" type="image/vnd.microsoft.icon" href="/uploads/favicon/favicon.ico" />
 <link rel="shortcut icon" type="image/x-icon" href="/uploads/favicon/favicon.ico" />
 <link rel="shortcut icon" type="image/x-icon" href="/uploads/favicon/favicon.gif" />
 <!-- CSS-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link href="/css/animate.css" rel="stylesheet">
 <link rel="stylesheet" href="/css/smoothness/jquery-ui-1.10.4.custom.min.css">
